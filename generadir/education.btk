@@ -1,0 +1,278 @@
+struct p_account
+{
+    uint32   user_id;
+    string   user_name;
+    string   password;
+    string   phone;
+    uint8   type;
+    uint8   channel;
+    uint32   add_ts;
+    uint32   lock_ts;
+    string   login_account;
+    int8   level;
+    string   lang;
+    int32   parent_id;
+}
+
+
+struct p_chat
+{
+    uint64   guid;
+    uint32   friend_id;
+    uint32   user_id;
+    string   content;
+    string   picture;
+    string   emoticon;
+    uint32   ts;
+}
+
+
+struct p_children
+{
+    uint32   guid;
+    uint32   parent_id;
+    string   name;
+    string   birthday;
+    uint32   add_ts;
+    string   img;
+    uint8   gender;
+    string   remark;
+}
+
+
+struct p_course
+{
+    uint32   guid;
+    uint32   school_id;
+    string   name;
+    string   img;
+    string   remark;
+    uint32   cancel_ts;
+}
+
+
+struct p_course_card
+{
+    uint32   guid;
+    uint32   course_id;
+    uint32   teacher_id;
+    uint32   start_time;
+    uint32   end_time;
+    uint8   week;
+    uint32   cancel_ts;
+}
+
+
+struct p_fcm_token
+{
+    uint32   guid;
+    uint32   player_id;
+    string   device_id;
+    string   fcm_token;
+    uint8   app_language;
+}
+
+
+struct p_friend
+{
+    uint32   guid;
+    uint32   teacher_id;
+    uint32   parent_id;
+    uint32   add_ts;
+    uint32   cancel_ts;
+}
+
+
+struct p_friend_chat
+{
+    uint32   guid;
+    uint32   user_id;
+    uint32   friend_id;
+    uint32   unread_count;
+    string   alias;
+}
+
+
+struct p_notice
+{
+    uint32   guid;
+    string   title;
+    string   content;
+    string   img;
+    uint8   must_read;
+    uint8   is_top;
+    uint32   add_ts;
+    uint32   delete_ts;
+    uint32   school_id;
+    uint32   teacher_id;
+}
+
+
+struct p_notice_read
+{
+    int32   guid;
+    uint32   user_id;
+    uint32   notice_id;
+    uint32   ts;
+}
+
+
+struct p_player_info
+{
+    uint32   user_id;
+    string   name;
+    string   img;
+    uint8   gender;
+    string   remark;
+}
+
+
+struct p_scan_code
+{
+    uint32   user_id;
+    uint32   school_id;
+    string   path;
+    uint32   add_ts;
+    uint32   cancel_ts;
+}
+
+
+struct p_school
+{
+    uint32   guid;
+    string   name;
+    string   img;
+    string   path;
+    string   remark;
+    uint32   auth_ts;
+    uint32   expire_ts;
+    uint32   parent_id;
+    uint32   cancel_ts;
+    uint32   no_sgin_stat_days;
+    uint32   course_notify_times;
+    uint32   date_notify_days;
+    uint32   no_sign_notify_days;
+}
+
+
+struct p_school_achievement
+{
+    uint32   guid;
+    uint32   school_id;
+    string   name;
+    uint32   cancel_ts;
+    int32   sort;
+}
+
+
+struct p_sign_in
+{
+    uint32   guid;
+    uint32   school_id;
+    uint32   teacher_id;
+    uint32   student_course_id;
+    uint32   children_id;
+    uint32   course_id;
+    uint32   course_card_id;
+    uint32   scan_code_id;
+    uint32   add_ts;
+    uint8   state;
+    string   remark;
+    uint32   delete_ts;
+}
+
+
+struct p_student
+{
+    uint32   guid;
+    uint32   children_id;
+    string   nick;
+    uint32   school_id;
+    uint32   add_ts;
+    string   remark;
+    uint32   cancel_ts;
+}
+
+
+struct p_student_achievement
+{
+    uint32   guid;
+    uint32   children_id;
+    uint32   school_id;
+    string   achieve_ids;
+}
+
+
+struct p_student_course
+{
+    uint32   guid;
+    uint32   school_id;
+    uint32   children_id;
+    uint32   course_id;
+    uint32   use_count;
+    uint32   total_count;
+    uint8   buy_type;
+    string   start_date;
+    string   end_date;
+    uint8   pay_payment;
+    float   pay_amount;
+    string   pay_date;
+    string   pay_remark;
+    uint32   pay_ts;
+    uint8   refund_payment;
+    float   refund_amount;
+    string   refund_date;
+    string   refund_reason;
+    string   refund_remark;
+    uint32   refund_ts;
+    uint32   cancel_ts;
+}
+
+
+struct p_teacher
+{
+    uint32   guid;
+    uint32   user_id;
+    uint32   school_id;
+    uint8   is_master;
+    string   remark;
+    uint32   add_ts;
+    uint32   cancel_ts;
+}
+
+
+struct s_maintain_notice
+{
+    uint8   channel;
+    uint8   is_show;
+    string   content;
+}
+
+
+struct s_version
+{
+    int32   channel;
+    int32   version;
+    string   type;
+}
+
+
+struct s_white_list
+{
+    uint32   id;
+    string   ip;
+}
+
+
+struct w_finance
+{
+    int32   finance_id;
+    string   time;
+    float   collection;
+    float   refund;
+    int32   school_id;
+    int32   new_count;
+    int32   drop_count;
+}
+
+

@@ -1,0 +1,66 @@
+{
+  "generadPath": "/generadir/",
+  "excelPath": "/../tables/",
+
+  "lua": {
+    "isOpen": false,
+    "bintalkPath": "",
+    "bytesPath": "",
+    "tablePath": "",
+    "dataBasePath": "",
+    "genList": ["common.btk", "platform.btk", "game_tp.btk"]
+  },
+
+  "cs": {
+    "isOpen": false,
+    "bintalkPath": "",
+    "bytesPath": "",
+    "tablePath": "",
+    "dataBasePath": "",
+    "genList": ["common.btk", "platform.btk"],
+    "resTableName": [],
+    "resTablePath": ""
+  },
+
+  "go": {
+    "isOpen": true,
+    "bintalkPath": "/../zinx/bintalk/",
+    "bytesPath": "/../zinx/conf/tables/",
+    "tablePath": "/../zinx/bintalk/",
+    "dataBasePath": "/../zinx/bintalk/",
+    "genList": ["common.btk", "platform.btk"],
+    "resTableName": [],
+    "resTablePath": "",
+    "packageName": "bintalk",
+    "neeData": true
+  },
+  "dart":{
+    "isOpen": false,
+    "bintalkPath": "/../flutter_education/lib/proto/",
+    "bytesPath": "/../zinx/conf/tables/",
+    "tablePath": "/../zinx/bintalk/",
+    "dataBasePath": "/../zinx/bintalk/",
+    "genList": ["common.btk", "platform.btk"],
+    "resTableName": [],
+    "resTablePath": "",
+    "packageName": "flutter_education",
+    "neeData": false
+  },
+
+  "java": {
+    "isOpen": false,
+    "bintalkPath": "",
+    "bytesPath": "",
+    "tablePath": "",
+    "dataBasePath": "",
+    "genList": ["common.btk", "platform.btk", "game_tp.btk"],
+    "resTableName": [],
+    "resTablePath": "",
+    "packageName": "com.zhijian.bintalk"
+  },
+
+  "dataBase":
+  [
+    {"host": "127.0.0.1", "user": "root", "password": "zhouzhiwei", "database": "education"}
+  ]
+}

@@ -1,0 +1,194 @@
+struct c_animal_help
+{
+    uint8 id;
+    string title;
+    string content;
+    uint8 bet_id;
+    uint8 result_id;
+}
+
+
+struct c_animal_help_table
+{
+    c_animal_help []record;
+}
+
+
+struct c_emoji
+{
+    uint8 id;
+    string name;
+    uint8 sort;
+}
+
+
+struct c_emoji_table
+{
+    c_emoji []record;
+}
+
+
+struct c_fix_text
+{
+    string id;
+    string chinese;
+    string vietnam;
+    string korea;
+}
+
+
+struct c_fix_text_table
+{
+    c_fix_text []record;
+}
+
+
+struct c_icon
+{
+    uint8 id;
+    string name;
+    string icon;
+}
+
+
+struct c_icon_table
+{
+    c_icon []record;
+}
+
+
+struct c_loc_text
+{
+    string id;
+    string chinese;
+    string Myanmar;
+    string korea;
+}
+
+
+struct c_loc_text_table
+{
+    c_loc_text []record;
+}
+
+
+struct g_animal_bet
+{
+    uint8 id;
+    string name;
+    string icon;
+    uint8 animal_type;
+    uint8 color_type;
+}
+
+
+struct g_animal_bet_table
+{
+    g_animal_bet []record;
+}
+
+
+struct g_animal_color_type
+{
+    uint8 id;
+    string codeName;
+    string desc;
+}
+
+
+struct g_animal_color_type_table
+{
+    g_animal_color_type []record;
+}
+
+
+struct g_animal_type
+{
+    uint8 id;
+    string codeName;
+    string desc;
+}
+
+
+struct g_animal_type_table
+{
+    g_animal_type []record;
+}
+
+
+struct g_card
+{
+    uint8 id;
+    uint8 color;
+}
+
+
+struct g_card_table
+{
+    g_card []record;
+}
+
+
+struct g_card_color_type
+{
+    uint8 id;
+    string codeName;
+    string desc;
+}
+
+
+struct g_card_color_type_table
+{
+    g_card_color_type []record;
+}
+
+
+struct g_game_type
+{
+    uint8 id;
+    string codeName;
+    string desc;
+    uint8 player_max;
+    uint8 no_operate_times;
+    uint8 watch_times;
+}
+
+
+struct g_game_type_table
+{
+    g_game_type []record;
+}
+
+
+struct g_global_var
+{
+    uint16 id;
+    string codeName;
+    string desc;
+    int32 valInt;
+    float valFloat;
+    string valString;
+}
+
+
+struct g_global_var_table
+{
+    g_global_var []record;
+}
+
+
+struct g_robot
+{
+    uint8 id;
+    string name;
+    uint8 icon;
+    uint8 gender;
+}
+
+
+struct g_robot_table
+{
+    g_robot []record;
+}
+
+
